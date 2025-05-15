@@ -1,7 +1,33 @@
-<!-- Contenu principal -->
+}
+
+        .controls button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Teknovaland</h1>
+    <p>Vente, Maintenance, Réseaux & Réparation</p>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
 <main>
     <section>
-        <h2>Nos Produits et Services</h2>
+        <h2 style="text-align: center;">Nos Produits et Services</h2>
 
         <div class="carousel">
             <div class="carousel-track" id="carouselTrack">
@@ -16,7 +42,7 @@
                     <p>Prix : 120 000 FCFA</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/installation-reseau.jpg" alt="Installation Réseau Wi-Fi">
+                    <img src="images/installation-reseau.jpg" alt="Installation Réseau">
                     <h3>Installation Réseau Wi-Fi</h3>
                     <p>À partir de 50 000 FCFA</p>
                 </div>
@@ -39,3 +65,24 @@
         </div>
     </section>
 </main>
+
+<footer>
+    <p>&copy; 2025 Teknovaland. Tous droits réservés.</p>
+</footer>
+
+<script>
+    const track = document.getElementById('carouselTrack');
+    let index = 0;
+
+    function moveSlide(step) {
+        const items = document.querySelectorAll('.carousel-item');
+        index = (index + step + items.length) % items.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Défilement automatique toutes les 5 secondes
+    setInterval(() => moveSlide(1), 5000);
+</script>
+
+</body>
+</html>
