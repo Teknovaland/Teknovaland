@@ -1,75 +1,41 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Produits - Teknovaland</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!-- Contenu principal -->
+<main>
+    <section>
+        <h2>Nos Produits et Services</h2>
 
-    <!-- En-tête -->
-    <header>
-        <h1>Teknovaland</h1>
-        <p>Vente, Maintenance, Réseaux & Réparation</p>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="produits.html">Produits</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <!-- Contenu principal -->
-    <main>
-        <section>
-            <h2>Nos Produits et Services</h2>
-            <div class="produit-container fade-in">
-
-                <!-- Ordinateur Portable -->
-                <div class="produit">
+        <div class="carousel">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-item">
                     <img src="images/ordinateur-portable.jpg" alt="Ordinateur Portable">
                     <h3>Ordinateur Portable HP</h3>
                     <p>Prix : 250 000 FCFA</p>
                 </div>
-
-                <!-- Imprimante -->
-                <div class="produit">
+                <div class="carousel-item">
                     <img src="images/imprimante-hp.jpg" alt="Imprimante HP">
                     <h3>Imprimante HP LaserJet</h3>
                     <p>Prix : 120 000 FCFA</p>
                 </div>
-
-                <!-- Installation Réseau -->
-                <div class="produit">
+                <div class="carousel-item">
                     <img src="images/installation-reseau.jpg" alt="Installation Réseau Wi-Fi">
                     <h3>Installation Réseau Wi-Fi</h3>
                     <p>À partir de 50 000 FCFA</p>
                 </div>
-
-                <!-- Réparation Informatique -->
-                <div class="produit">
+                <div class="carousel-item">
                     <img src="images/reparation-ordi.jpg" alt="Réparation Informatique">
                     <h3>Réparation Ordinateur / Imprimante</h3>
                     <p>Diagnostic + Réparation dès 20 000 FCFA</p>
                 </div>
-
-                <!-- Accessoires -->
-                <div class="produit">
+                <div class="carousel-item">
                     <img src="images/accessoires.jpg" alt="Accessoires informatiques">
                     <h3>Accessoires (souris, claviers, câbles...)</h3>
                     <p>Prix : à partir de 3 000 FCFA</p>
                 </div>
-
             </div>
-        </section>
-    </main>
+        </div>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2025 Teknovaland. Tous droits réservés.</p>
-    </footer>
-
-</body>
-</html>
+        <div class="controls">
+            <button onclick="moveSlide(-1)">Précédent</button>
+            <button onclick="moveSlide(1)">Suivant</button>
+        </div>
+    </section>
+</main>
